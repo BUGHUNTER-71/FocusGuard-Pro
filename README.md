@@ -2,13 +2,12 @@
 
 <div align="center">
 
-<img src="assets/banner.jpg" alt="FocusGuard Pro v6 — AI Bangla Voice & Active Process Guardian" width="100%">
+<img src="assets/Gemini_Generated_Image_yaipmeyaipmeyaip.jpeg.jpg" alt="FocusGuard Pro v6 — AI Bangla Voice & Active Process Guardian" width="100%">
 
 <br><br>
 
 # 🛡️ FocusGuard Pro v6
 
-### B![Uploading banner.jpeg…]()
 lock distractions. Stay locked in. Get told off — in Bangla.
 
 An all-in-one Windows focus tool that kills distracting apps, blocks websites at the system level,
