@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<img src="Gemini_Generated_Image_yaipmeyaipmeyaip.jpeg.jpg" alt="FocusGuard Pro v6 — AI Bangla Voice & Active Process Guardian" width="100%">
+<img src="assets/banner.jpg" alt="FocusGuard Pro v6 — AI Bangla Voice & Active Process Guardian" width="100%">
 
 <br><br>
 
