@@ -81,20 +81,6 @@ No closing the window on impulse. Quitting mid-session requires typing a
 
 ---
 
-## 🧠 How It Works
-
-```mermaid
-flowchart LR
-    A[Pick apps & sites<br/>+ set timer] --> B[Start session]
-    B --> C[Edit hosts file<br/>+ flush DNS]
-    B --> D[Watch process list<br/>every few seconds]
-    D -->|Blocked app found| E[taskkill + Bangla warning]
-    B --> F{Timer ends?}
-    F -->|Yes| G[Restore hosts file<br/>+ congratulate you]
-    F -->|Quit early| H[Type 6-char code<br/>to abort]
-```
-
----
 
 ## 🧠 How It Works
 
