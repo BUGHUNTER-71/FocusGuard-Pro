@@ -96,6 +96,65 @@ flowchart LR
 
 ---
 
+## 🧠 How It Works
+
+```mermaid
+flowchart LR
+    A((Start)) --> B[🎯 Select Apps,<br/>Sites & Timer]
+    B --> C{🛡️ Shield<br/>Active}
+    
+    C -->|Network Layer| D[🌐 Edit hosts File<br/>+ Flush DNS]
+    C -->|Process Layer| E[🔍 Monitor<br/>tasklist Loop]
+    
+    E -->|App Detected| F[💀 taskkill +<br/>🗣️ Bangla Warning]
+    F --> E
+    
+    C -->|00:00 or<br/>6-Char Code| G[🧹 Restore hosts<br/>& Finish]
+    G --> H((Done))
+
+    style A fill:#22D3EE,stroke:#0891B2,color:#000
+    style H fill:#10B981,stroke:#059669,color:#fff
+    style C fill:#6366F1,stroke:#818CF8,color:#fff
+    style F fill:#EF4444,stroke:#DC2626,color:#fff
+```
+
+## 🧠 How It Works (System Architecture & Flow)
+
+```mermaid
+flowchart TD
+    Start((🚀 Launch<br/>as Admin)) --> Config[⚙️ Load Settings &<br/>Bangla TTS Greeting]
+    Config --> Select[🎯 Select Target Apps,<br/>Websites & Timer]
+    Select --> Shield([🛡️ ACTIVATE FOCUS SHIELD])
+
+    subgraph Active_Engine ["⚡ Real-Time Guardian Engine"]
+        direction TB
+        Shield --> WebBlock[🌐 Inject 127.0.0.1 in hosts<br/>& Flush DNS Cache]
+        Shield --> Loop{🔍 Scan Processes<br/>Every 2 Seconds}
+        
+        Loop -->|Blocked .exe / UWP Found| Kill[💀 Force Kill Process<br/>taskkill /F /T]
+        Kill --> Warn[🗣️ Bangla AI Voice Warning<br/>'না! আপনি এখানে ঢুকতে পারবেন না']
+        Warn --> Loop
+    end
+
+    Loop -->|User Tries to Quit| Override{🔐 Enter 6-Char<br/>Security Code?}
+    Override -->|Wrong Code| Loop
+    Override -->|Valid Code| Restore[🧹 Restore hosts File<br/>& Flush DNS]
+
+    Loop -->|Timer Reaches 00:00| Complete[🎉 Bangla Voice<br/>Congratulation]
+    Complete --> Restore
+    Restore --> End((✅ Session<br/>Complete))
+
+    %% Custom Styling
+    style Start fill:#0078D6,stroke:#22D3EE,stroke-width:2px,color:#fff
+    style End fill:#10B981,stroke:#6EE7B7,stroke-width:2px,color:#fff
+    style Shield fill:#8B5CF6,stroke:#C4B5FD,stroke-width:2px,color:#fff
+    style Kill fill:#EF4444,stroke:#FCA5A5,stroke-width:2px,color:#fff
+    style Warn fill:#F59E0B,stroke:#FDE68A,stroke-width:2px,color:#000
+    style Loop fill:#1E293B,stroke:#38BDF8,stroke-width:2px,color:#fff
+    style Override fill:#1E293B,stroke:#F43F5E,stroke-width:2px,color:#fff
+    style Active_Engine fill:#0F172A,stroke:#334155,stroke-width:2px,color:#38BDF8
+```
+
 ## 🛠️ Tech Stack
 
 | Component | Technology / Windows API |
