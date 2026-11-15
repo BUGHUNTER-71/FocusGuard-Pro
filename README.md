@@ -267,6 +267,8 @@ Released under the **MIT License**. See [`LICENSE`](LICENSE) for details.
 <div align="center">
 
 ### Made with ❤️ by [BUGHUNTER-71](https://github.com/BUGHUNTER-71)
+                           [RAKIBUL HASAN]
+                           
 
 If FocusGuard Pro helped you focus, **drop a ⭐ on the repo** — it means a lot for a first project!
 
